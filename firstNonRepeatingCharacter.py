@@ -12,9 +12,9 @@ If a string contains all repeating characters, it should return an empty string 
 """
 
 def first_non_repeating_letter(string):
-    newString = string.lower()
-    for i, char in enumerate (newString):
-        if newString.count(char) == 1:
+    lowerString = string.lower()
+    for i, char in enumerate (lowerString):
+        if lowerString.count(char) == 1:
             return string[i]
     return ""
 
